@@ -18,20 +18,19 @@
                 <td><input type="text" name="nilai" id="nilai2"></td>
             </tr>
             <tr>
-                <td colspan="2"><input type="submit" onclick="jumlah()" value="Kirim"></td>
+                <td colspan="2"><input type="submit" id="tambah" value="Kirim"></td>
             </tr>
         </table>
     </form>
-		<script type="text/javascript">
-		function jumlah(){
- 
-			var satu = document.getElementById('nilai1').value; 
-			var dua = document.getElementById('nilai2').value;
-			var total = parseInt(satu) + parseInt(dua);
-
-            alert('Total Hasil dari '+ satu + ' tambah ' + dua + ' adalah ' + total);
-		}
-		
+    
+	<script type="text/javascript">
+        const kirim = document.getElementById('tambah');
+        kirim.addEventListener('click', function() {
+            const satu = document.getElementById('nilai1').value; 
+			const dua = document.getElementById('nilai2').value;
+            const total = parseInt(satu) + parseInt(dua);
+            alert('Hasil dari ' + satu + ' tambah '+ dua + ' Hasilnya : ' + total);
+        })
 	</script>
 </body>
 </html>
