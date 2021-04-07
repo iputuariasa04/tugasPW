@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        .container{
+            width: 400px;
+            height: 500px;
+            border: 2px solid #000;
+            margin: auto;
+            padding: 5px 10px;
+        }
+        label span{
+            font-style: italic;
+            color: red;
+        }
+        .btn{
+            text-align: center;
+        }
+        button{
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Isilah Form dibawah ini</h3><hr>
+        <table>
+        <form action="" method="post">
+            <tr>
+                <td>
+                    <label>Nama Lengkap :</label>
+                </td>
+                <td>
+                    <input type="text" size="35">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Username :</label>
+                </td>
+                <td>
+                    <input type="text" size="35">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password :</label>
+                </td>
+                <td>
+                    <input type="password" size="35">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Jenis Kelamin :</label>
+                </td>
+                <td>
+                    <input type="radio" name="jk" value="l">Laki-laki
+                    <input type="radio" name="jk" value="p">Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Hobby Anda <span>boleh lebih dari satu</span> :</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="hobby" value="masak">Memasak
+                </td>
+                <td>
+                    <input type="checkbox" name="hobby" value="sepakbola">Sepak Bola
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="hobby" value="basket">Basket
+                </td>
+                <td>
+                    <input type="checkbox" name="hobby" value="hiking">Hiking
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Pesan :</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea name="" id="" cols="50" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="btn">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+    </div>
+</body>
+</html>
